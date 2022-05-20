@@ -1,0 +1,84 @@
+<div *ngIf="isToken">
+  <h1>Database Identity Report</h1>
+  <label>Select database</label>
+  <select name="Database" class="form-control" (change)="getTableNames($event)" [(ngModel)]="selectedDatabases">
+
+    <option [value]="db.id" *ngFor="let db of DatabaseList">{{db.databaseName}}</option>
+  </select>
+  <!-- -------------------------------------------------------------------------------------------------- -->
+  <br />
+  <div *ngIf="isDatabaseSelected">
+    <label>Select Table</label>
+    <select name="Table" class="form-control" (change)="getColumns($event)" [(ngModel)]="selectedTable">
+
+      <option [value]="tb.tableName" *ngFor="let tb of tableList">{{tb.tableName}}</option>
+    </select>
+  </div>
+
+  <br />
+  <!-- -------------------------------------------------------------------------------------------------- -->
+
+  <div *ngIf="isTableSelected">
+    <form [formGroup]="TableColumns" (ngSubmit)="onSubmit()">
+      <label for="Columns">Select Columns</label><br />
+      <div class="form-check form-check-inline" *ngFor="let cl of columnList; let i=index">
+        <input class="form-check-input" type="checkbox" [value]="cl.columnName" (change)="onCheckBoxChange(cl.columnName, $event.target.checked)">
+        <label class="form-check-label" for="inlineCheckbox1">{{cl.columnName}}</label>
+      </div><br /><br />
+      <button class="btn btn-primary btn-sm" style="width:100%;" type="submit" [disabled]="!TableColumns.valid">Submit</button>
+    </form>
+  </div>
+  <br />
+
+  <!-- ---------------------------------------------------------------------------------------------- -->
+  <div *ngIf="isReportExists">
+    <div>
+      <form [formGroup]="form" (ngSubmit)="onFilterData()">
+        <div class="form-check form-check-inline" *ngFor="let item of FilterData">
+          <input class="form-check-input" type="radio" formControlName="SelectedFilterID" [value]="item.value" (change)="onRadioButtonChange($event)">
+          <label class="form-check-label"> {{item.name}}</label>
+        </div><br /><br />
+        <button class="btn btn-primary btn-sm" style="width:100%;" type="submit" [disabled]="!form.valid">Submit</button><br />
+      </form>
+    </div>
+    <div>
+      <br />
+      <form (ngSubmit)="ExportReport()">
+        <button type="submit" class="btn btn-success btn-sm" style="margin-right:auto;" [disabled]>Export</button>
+      </form><br />
+    </div>
+  </div>
+  <!-- -------------------------------------------------------------------------------------------------- -->
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="isReportExists">
+    <thead>
+      <tr>
+        <th *ngFor="let y of DBIdentityReportList[0].listOfTableColumn;let indexOfelement=index;">{{y.columnName}}</th>
+        <th *ngFor="let y of DBIdentityReportList[0].listDBDetails">{{ y.strDBName }}
+<tr>
+        <th>IsKeyExists</th>
+        <th>IsValueExists</th>
+      </tr>
+      </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dbDetail of DBIdentityReportList">
+        <td>{{ dbDetail.strKey }}</td>
+        <td>{{ dbDetail.strValue }}</td>
+        <td *ngFor="let y of dbDetail.listDBDetails">
+      <tr class="report">
+        <th *ngIf="y.isKeyExists" > <span class="material-icons md-18" style="color:darkgreen; font-size:30px;">done</span></th>
+        <th *ngIf="!y.isKeyExists" > <span class="material-icons md-18 " style="color:darkred; font-size:30px;">clear</span></th>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <th *ngIf="y.isValueExists" > <span class="material-icons md-18 " style="color:darkgreen; font-size:30px;">done</span></th>
+        <th *ngIf="!y.isValueExists"> <span class="material-icons md-18 " style="color:darkred; font-size:30px;">clear</span></th>
+      </tr>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+

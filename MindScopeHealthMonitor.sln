@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MindScopeHealthMonitorRepository", "MindScopeHealthMonitorRepository\MindScopeHealthMonitorRepository.csproj", "{49F7991D-E7AE-43DE-A386-DC27ACD6F5CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MindScopeHealthMonitorService", "MindScopeHealthMonitorService\MindScopeHealthMonitorService.csproj", "{E1C223CC-E1BD-42E9-93E8-16C0F0EFA3E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MindScopeHealthMonitor", "MindScopeHealthMonitor\MindScopeHealthMonitor.csproj", "{557E71E9-B309-483A-B840-28386BC4A727}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49F7991D-E7AE-43DE-A386-DC27ACD6F5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F7991D-E7AE-43DE-A386-DC27ACD6F5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F7991D-E7AE-43DE-A386-DC27ACD6F5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F7991D-E7AE-43DE-A386-DC27ACD6F5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C223CC-E1BD-42E9-93E8-16C0F0EFA3E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C223CC-E1BD-42E9-93E8-16C0F0EFA3E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C223CC-E1BD-42E9-93E8-16C0F0EFA3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C223CC-E1BD-42E9-93E8-16C0F0EFA3E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557E71E9-B309-483A-B840-28386BC4A727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557E71E9-B309-483A-B840-28386BC4A727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557E71E9-B309-483A-B840-28386BC4A727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557E71E9-B309-483A-B840-28386BC4A727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE779BB6-BF48-4A71-8183-88740EBB3E26}
+	EndGlobalSection
+EndGlobal

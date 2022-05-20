@@ -1,0 +1,14 @@
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\bin\Release\net5.0\MindScopeHealthMonitorRepository.deps.json
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\bin\Release\net5.0\MindScopeHealthMonitorRepository.dll
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\bin\Release\net5.0\MindScopeHealthMonitorRepository.pdb
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\MindScopeHealthMonitorRepository.csproj.AssemblyReference.cache
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\MindScopeHealthMonitorRepository.csproj.ResolveComReference.cache
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\MindScopeHealthMonitorRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\MindScopeHealthMonitorRepository.AssemblyInfoInputs.cache
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\MindScopeHealthMonitorRepository.AssemblyInfo.cs
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\MindScopeHealthMonitorRepository.csproj.CoreCompileInputs.cache
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\MindScopeHealthMonitorRepository.dll
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\refint\MindScopeHealthMonitorRepository.dll
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\MindScopeHealthMonitorRepository.pdb
+C:\Users\harshad.patel\source\repos\dev\MindScope\MindScope\MindScopeHealthMonitorRepository\obj\Release\net5.0\ref\MindScopeHealthMonitorRepository.dll

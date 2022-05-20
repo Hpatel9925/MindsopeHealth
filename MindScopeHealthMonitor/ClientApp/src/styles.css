@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+  border:1px;
+}
+.table-striped{
+    text-align:center;
+}
+
+.btn-default {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.report{
+    background:none;
+    background-color:none;
+}
+
+.table td {
+  border-top: none;
+}
+
+.table thead th{
+    border-bottom: none;
+}
+.table-striped tbody tr{
+  background-color: none;
+}
+.table th, td {
+  border-top: none;
+  background: none;
+  border-bottom: none;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
